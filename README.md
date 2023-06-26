@@ -12,7 +12,7 @@ It is only an example about how to approach and deliver a reliable serverless so
 
 For the sake of simplifying the exercise I used an online tool to convert the csv to JSON in order to populate a DynamoDB table
 
-Please run the command below to populate dynamoDB table (there is an issue with duplicated item but still works, it requires a bit of time to fix it)
+Please run the command below to populate dynamoDB table (there is an issue with duplicated items but still works, however as I created the title column as the partition key no duplicated will be inserted
 
 ```
 ts-node import-books.ts
@@ -29,7 +29,7 @@ Git Branch NPM Package: https://www.npmjs.com/package/git-branch
 
 AWS CDK Documentation: https://docs.aws.amazon.com/cdk/api/v2/docs/aws-construct-library.html
 
-## Troubeshooting
+## Troubleshooting
 
 If you face issues with Doker run this command
 
