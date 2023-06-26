@@ -13,7 +13,7 @@ type Book {
   publisher: String!;
 }
 
-type GetBookResponse {
+type GetBooksResponse {
   data: [Book];
   nextToken: String;
 }

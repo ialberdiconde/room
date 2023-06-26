@@ -8,8 +8,6 @@ This is a nice boilerplate (CRUD) to deploy a GraphQL API relying on AppSync and
 
 Due to the time constraint I did not include any test neither the queries to search and sort as required
 
-Left to attach an endpoint/s to consume the API. Please, use the AWS console in the meantime to see the achievement so far
-
 It is only an example about how to approach and deliver a reliable serverless solution to consume a GraphQL API using the the right AWS services. 
 
 For the sake of simplifying the exercise I used an online tool to convert the csv to JSON in order to populate a DynamoDB table
