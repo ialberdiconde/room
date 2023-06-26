@@ -1,4 +1,4 @@
-# AppSync, CDK, DynamoD and TypeScript to manage a GraphQL API
+# AppSync, CDK, DynamoDB and TypeScript to build and deploy a GraphQL API
 
 This is a companion repo to deploy a GraphQL APIs using AppSync & CDK
 
@@ -8,9 +8,9 @@ This is a nice boilerplate (CRUD) to deploy a GraphQL API relying on AppSync and
 
 Due to the time constraint I did not include any test neither the queries to search and sort as required
 
-It is only an example about how to approach and deliver a reliable serverless solution to consume a GraphQL API using the best 
+Left to attach an endpoint/s to consume the API. Please, use the AWS console in the meantime to see the achievement so far
 
-AWS services
+It is only an example about how to approach and deliver a reliable serverless solution to consume a GraphQL API using the the right AWS services. 
 
 For the sake of simplifying the exercise I used an online tool to convert the csv to JSON in order to populate a DynamoDB table
 
