@@ -37,7 +37,7 @@ export const logDebug = (message: string | any, title: string | undefined = unde
 // Get Document Client
 export const getDDBDocClient = (): Promise<DynamoDBDocumentClient> => {
   return new Promise((resolve, reject) => {
-    const ddbClient = new DynamoDBClient({ region: 'ap-southeast-2' });
+    const ddbClient = new DynamoDBClient({ region: 'eu-west-1' });
     const marshallOptions = {
       convertEmptyValues: true,
       removeUndefinedValues: true,

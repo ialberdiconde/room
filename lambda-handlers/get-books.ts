@@ -52,6 +52,7 @@ export const handler: AppSyncResolverHandler<GetBooksParams, Result> = async (ev
           : '',
       };
 
+      utils.logInfo(result, ' Result');
       // Return result
       resolve(result);
     } catch (error: any) {
