@@ -12,7 +12,7 @@ It is only an example about how to approach and deliver a reliable serverless so
 
 For the sake of simplifying the exercise I used an online tool to convert the csv to JSON in order to populate a DynamoDB table
 
-Please run the command below to populate dynamoDB table (there is an issue with duplicated item but still works, meed to time to fix it)
+Please run the command below to populate dynamoDB table (there is an issue with duplicated item but still works, it requires a bit of time to fix it)
 
 ```
 ts-node import-books.ts
