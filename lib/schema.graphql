@@ -1,0 +1,76 @@
+# Types
+type Book {
+  itemType: String!;
+  title: String!;
+  average_rating: String!;
+  isbn: String!;
+  isbn13: String!;
+  language_code: String!;
+  num_pages: String!;
+  ratings_count: String!;
+  text_reviews_count: String!;
+  publication_date: String!;
+  publisher: String!;
+}
+
+type GetBookResponse {
+  data: [Book];
+  nextToken: String;
+}
+
+# Inputs
+input AddBookInput {
+  title: String!;
+  authors: String;
+  average_rating: String!;
+  isbn: String!;
+  isbn13: String!;
+  language_code: String!;
+  num_pages: String!;
+  ratings_count: String!;
+  text_reviews_count: String!;
+  publication_date: String!;
+  publisher: String!;
+}
+input UpdateBookInput {
+  title: String!;
+  authors: String;
+  average_rating: String;
+  isbn: String;
+  isbn13: String;
+  language_code: String;
+  num_pages: String;
+  ratings_count: String;
+  text_reviews_count: String;
+  publication_date: String;
+  publisher: String;
+}
+input DeleteBookInput {
+  title: String!;
+}
+input GetBooksInput {
+  title: String;
+  nextToken: String;
+}
+
+# Queries
+type Query {
+  getBooks(getBooksInput: GetBooksInput!): GetBooksResponse
+}
+
+# Mutations
+type Mutation {
+  addBook(addBookInput: AddBookInput!): Book
+  updateBook(updateBookInput: UpdateBookInput!): Book
+  deleteBook(deleteBookInput: DeleteBookInput!): String
+}
+
+# Subscriptions
+type Subscription {
+  onAddBook: Book
+    @aws_subscribe(mutations: ["addBook"])
+  onDeleteBook: String
+    @aws_subscribe(mutations: ["deleteBook"])
+  onUpdateBook: Book
+    @aws_subscribe(mutations: ["updateBook"])
+}
